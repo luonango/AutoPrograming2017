@@ -1,5 +1,5 @@
 
-# ** SearchSystem & AutoPrograming **
+# SearchSystem & AutoPrograming 
 
     2017级操作系统大作业
 
