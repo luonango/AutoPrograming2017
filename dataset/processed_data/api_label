@@ -1,0 +1,1129 @@
+1||getpwuid
+1||getpwuid
+1||getpwuid
+1||getpwuid
+2||getrlimit
+3||prlimit
+4||rlimit
+5||setrlimit
+2||getrlimit
+6||*gets
+6||*gets
+7||*gets,puts
+6||*gets
+8||*getservbyname
+8||*getservbyname
+8||*getservbyname
+8||*getservbyname
+9||unlink(),open(),close(),mkfifo(),printf()
+10||mkfifo(),perror(),printf()
+11||open(),close(),mkfifo(),write(),read()
+12||open(),close(),mkfifo(),write(),read(),unlink()
+13||unlink(),open(),close(),mkfifo(),printf(),perror()
+14||close(),mkstemp(),printf()
+15||close(),mkstemp(),printf(),unlink()
+16||mkstemp(),perror(),unlink(),exit()
+17||mkstemp(),perror(),unlink(),exit(),close()
+18||time(),localtime(),printf(),mktime()
+19||printf(),strftime(),mktime(),scanf(),difftime()
+20||mktime(),printf(),strftime(),print()
+21||mktime(),ctime(),printf()
+18||time(),localtime(),printf(),mktime()
+22||*getservbyport
+22||*getservbyport
+22||*getservbyport
+22||*getservbyport
+22||*getservbyport
+23||*getservent
+23||*getservent
+23||*getservent
+23||*getservent
+23||*getservent
+24||getsid
+24||getsid
+24||getsid
+25||getsockname
+25||getsockname
+25||getsockname
+25||getsockname
+25||getsockname
+26||getuid,print
+27||getuid,getwuid,print
+28||tzset,time,gmtime,asctime
+29||time,gmtime
+29||time,gmtime
+29||time,gmtime
+30||posix_openpt,grantpt,unlockpt,ptsname
+31||system,posix_openpt,grantpt,unlockpt,printf,fprintf
+32||print,htonl,ntohl
+33||wscanf,wprintf
+34||fopen,fwscanf,wprintf
+35||swscanf,wprintf
+36||open,err
+37||execv,err
+38||htons（） printf()
+38||htons（） printf()
+39||htons（） scanf（） printf（）
+40||printf() htons()
+41||htons（） ntohs（） ntohl（）
+42||printf() scanf() inet_ntop() inet_pton()
+43||printf（） scanf()  inet_pton()   inet_ntop()
+44||printf（） scanf()  inet_pton()
+45||inet_pton() inet_ntop() perror() exit() printf() sizeof()
+46||inet_pton() exit() print() perror()
+45||inet_pton() inet_ntop() perror() exit() printf() sizeof()
+42||printf() scanf() inet_ntop() inet_pton()
+47||inet_ntop() printf()
+43||printf（） scanf()  inet_pton()   inet_ntop()
+48||inet_ntop() exit() print() perror()
+49||getid() initgroup() printf()
+50||getuid() getgid() geteuid() getegid() printf() fprintf() setuid() perror() initgroups() read() open()
+51||getgroups() fprint() geteuid() getuid() getgid() setuid() initgroup() setgid() perror()
+52||getuid() getgid() geteuid() getegid() printf() fprintf() setuid() perror() initgroups()
+53||geteuid() initgroup() printf() perror()
+54||int ioctl(int fd, int request,  ...)
+55||int ioctl(int fd, int request,...)
+56||int ioctl(int fd, int request,...), int open(arg1,arg2)
+56||int ioctl(int fd, int request,...), int open(arg1,arg2)
+56||int ioctl(int fd, int request,...), int open(arg1,arg2)
+57||int isatty(int fd)，int fileno(FILE *stream)
+58||int isatty(int fd)，int fileno(FILE *stream), int open(arg1,arg2)
+59||int isatty(int fd)，int fileno(FILE *stream), int open(arg1,arg2), char * ttyname(int desc)
+60||int isatty(int fd)，int fileno(FILE *stream), long fpathconf(int files, int name)
+61||int isatty(int fd)，int ioctl(int fd, int request,  ...)， int signal(arg1,arg2)
+62||int kill(pid_t pid, int signo),
+63||int kill(pid_t pid, int signo), pid_t fork(), pid_t waitpid(pid_t pid,int *status,int options)
+64||int kill(pid_t pid, int signo), pid_t fork(), int signal(arg1,arg2)
+65||int kill(pid_t pid, int signo), pid_t fork()
+65||int kill(pid_t pid, int signo), pid_t fork()
+66||int lchown(const char *path, uid_t owner, gid_t group)
+67||int chown(const char * path, uid_t owner, gid_t group)
+68||int chown(const char *pathname, uid_t owner, gid_t group),  int fchown(int filedes, uid_t owner, gid_t group);
+69||link
+69||link
+69||link
+70||link,stat,printf
+70||link,stat,printf
+71||symlinkat，perror,exit
+72||memset,readlinkat,perror
+73||itoa,printf
+74||gets，printf,isspace,isdigit
+75||fopen,perror,fgets,puts,fclose
+76||malloc,bzero,lio_listio
+77||open,bzero,malloc,aio_read,aio_error,aio_return
+78||open,perror,bzero,lio_listio
+79||bzero,aio_read,aio_suspend
+80||aio_read,aio_error,aio_return
+81||puts,exit,socket,bzero,listen,sleep,accept,perror
+82||socket,bzero,bind,listen,exit,accept
+83||socket,perror,inet_aton,bzero,connect,exit,send,recv
+84||socket,bind,listen
+85||socket,connect
+86||localtime，asctime，time
+87||setjmp，longjmp
+88||setjmp，longjmp，fgets
+89||open，perror，exit，lseek，write
+90||lseek
+91||lseek，err_sys，creat，write
+92||lseek，open，read
+93||memset，open，close，perror，lseek
+94||open，perror，exit，lseek，close
+95||lstat
+95||lstat
+95||lstat
+96||lstat,opendir,strcmp
+95||lstat
+95||lstat
+95||lstat
+95||lstat
+95||lstat
+95||lstat
+95||lstat
+97||malloc
+97||malloc
+97||malloc
+97||malloc
+97||malloc
+98||mkdir
+98||mkdir
+98||mkdir
+98||mkdir
+98||mkdir
+99||mkdirat
+99||mkdirat
+99||mkdirat
+99||mkdirat
+99||mkdirat
+100||mkdtemp
+100||mkdtemp
+101||gettempprefix
+100||mkdtemp
+102||mkostemp
+103||fstat,lseek,write,memcpy,munmap,open，mmap
+104||open,lseek,write,mmap,memcpy,munmap
+105||open,fstat,mmap,write,munmap
+106||open,fstat,mmap,msync,munmap
+107||mmap,munmap
+108||malloc,mprotect
+109||sigemptyset,sigaction,sysconf,memalign,mprotect
+110||mprotect,sigaction,mmap,open,munmap
+111||open,mprotect,sigemptyset,sigaction
+112||msgget,msgrcv,strncmp,msgctl
+113||msgctl
+114||sscanf,msgctl
+113||msgctl
+115||memcpy,msgsnd,msgrcv,msgctl,msgget,pthread_create
+116||msgrcv,memcpy,msgsnd,msgget
+117||ftok,msgget,strcpy,msgsnd
+118||ftok,msgget,memset,msgrcv
+119||msgget
+120||msgget,fgets,strcpy,msgsnd,strncmp
+121||getsockopt
+121||getsockopt
+121||getsockopt
+121||getsockopt
+121||getsockopt
+122||getspent,setpwent,getspnam,setspent,endspent
+123||getspent,setspent,endspent
+124||getspnam,getpwnam,exit,getpass,crypt
+125||getspnam
+125||getspnam
+125||getspnam
+126||gettimeofday
+127||memset,gettimeofday
+126||gettimeofday
+128||pthread_self,pthread_join,pthread_create,gettimeofday,clock_gettime
+126||gettimeofday
+129||setjmp
+130||setlogmask
+131||setnetent
+132||setpgid
+129||setjmp
+129||setjmp
+130||setlogmask
+130||setlogmask
+132||setpgid
+133||getgrent、setgrent、print
+134||getgroups、setgroups、initgroups
+135||getgid、getegid、atoi、setgid
+136||gethostent、sethostent、endhostent
+137||REGS、int86、getch
+138||REGS、sscanf、int86、getch
+138||REGS、sscanf、int86、getch
+139||isalnum
+140||isalpha
+141||islower
+142||isupper
+143||isdigit
+144||isxdigit
+145||mblen
+146||mbtowc
+147||wctomb
+148||mbstowcs
+149||wcstombs
+150||mbsinit
+151||btowc
+152||setreuid,getresuid,getpid
+153||setrlimit，getrlimit
+154||setservent，getservent，endservent
+155||setsid,fork,umask
+156||mbrlen，setlocale，memset
+157||setbuf
+158||setegid
+159||setenv
+160||seteuid()
+161||strcpy(),malloc()
+162||read()、write()、exit()、close()
+163||setpriority，pthread_exit，pthread_create
+164||setprotoent，getprotoent
+165||getpwent，setpwent，endpwent
+166||getuid,setregid
+167||pthread_self，pthread_once，pthread_create
+168||getpid,setpriority
+169||setprotoent，getprotoent，endprotoent
+165||getpwent，setpwent，endpwent
+170||setprotoent,getprotoent,endprotoent
+171||setpwent，getpwent
+172||rename
+172||rename
+172||rename
+172||rename
+172||rename
+173||renameat
+173||renameat
+173||renameat
+174||rewinddir
+174||rewinddir
+175||rewind
+175||rewind
+175||rewind
+175||rewind
+175||rewind
+176||semget
+176||semget
+176||semget
+177||sem_close
+178||sem_destroy
+178||sem_destroy
+179||semctl
+180||semgctl
+181||wait
+181||wait
+181||wait
+182||waitpid
+183||time
+183||time
+183||time
+184||semop
+184||semop
+185||semget,semop
+186||sem_open
+187||sem_post,sem_wait
+188||sem_init,sigemptyset,sigaction,clock_gettime,atoi,sem_timedwait,sem_post
+189||sem_post,sem_wait,Pthread_create
+190||sem_wait,sem_post,sem_init
+191||sem_init,sem_getvalue,sem_post
+192||wcscpy,wprintf
+193||fopen,getwc,fclose,wprintf
+194||mblen,mbtowc,printf
+195||mq_getattr,malloc,perror,exit,mq_receive,free,mq_open,mq_notify,pause
+196||strchr,nftw,exit
+197||rand,islower,printf
+198||random,printf,srandom
+199||sem_getvalue
+199||sem_getvalue
+200||sem_init
+184||semop
+184||semop
+184||semop
+184||semop
+184||semop
+186||sem_open
+186||sem_open
+201||vfscanf
+202||vfprintf
+203||vprintf
+204||vscanf
+205||sscanf
+206||vsscanf
+207||sem_wait
+208||send
+209||sendto
+210||sendmsg
+210||sendmsg
+210||sendmsg
+210||sendmsg
+210||sendmsg
+210||sendmsg
+211||rmdir
+211||rmdir
+211||rmdir
+211||rmdir
+211||rmdir
+212||scanf
+212||scanf
+212||scanf
+212||scanf
+212||scanf
+213||select
+213||select
+213||select
+213||select
+213||select
+214||seekdir
+214||seekdir
+214||seekdir
+214||seekdir
+214||seekdir
+215||abort、fopen、
+216||abort
+217||abort、sleep、pause
+218||abort、exit
+219||abort、sleep、semctl、semop
+220||accept、socket、bind、send
+221||accept、socket、listen
+222||accept、listen
+223||accept、epoll_ctl
+224||accept、sclient 、sendto
+225||access、open
+226||access
+226||access
+227||strtok
+226||access
+228||aio_cancel、aio_read、aio_return
+229||sigev_notify
+230||aio_cancel、aio_read
+231||aio_cancel、lio_listio
+232||aio_fsync,aio_read,aio_return,aio_error
+233||aio_read、aio_error、aio_return
+234||aio_error，aio_read,aio_return
+235||aio_error,aio_return,aio_suspend,aio_write等
+236||aio_read,aio_error,aio_sigevent,aio_fildes
+237||aio_read，aio_suspend
+238||aio_read,aio_return,aio_error
+239||aio_read,aio_fildes,aio_buf
+240||aio_error,aio_return
+241||aio_read,aio_fildes,aio_buf,aio_nbytes
+242||aio_read,aio_nbytes,aio_buf
+242||aio_read,aio_nbytes,aio_buf
+243||aio_error aio_return aio_read write getpid
+244||reaval,aio_return,aio_error,aio_write
+245||aio_return,aio_error,aio_write
+245||aio_return,aio_error,aio_write
+245||aio_return,aio_error,aio_write
+246||retval,aio_error，aio_write
+247||getpid，aio_write，aio_error
+248||aio_error,aio_sigevent,aio_nbytes,aio_offset,aio_write
+249||aio_error
+250||aio_write,aio_offset,aio_nbytes
+251||aio_buf，aio_write
+252||aio_cancel,
+253||aio_write,aio_error,aio_return,aio_cancel
+254||aio_suspend、aio_read
+255||aio_suspend、aio_read_file
+256||aio_write、aio_read、 aio_fildes、aio_offset
+257||aio_write、aio_read、aio_fildes
+258||aio_write、aio_read、 aio_return、aio_erro
+259||alarm、pause
+260||alarm、pause、sig_handler
+259||alarm、pause
+261||alarm、pause、setjmp、longjmp、sig_alrm
+262||atexit、myexit1、myexit2
+263||atexit、func1、func2、func3
+263||atexit、func1、func2、func3
+264||atexit、show1、show2
+265||atexit、exit1、exit2
+266||atexit、functionA
+267||sleep、usleep
+268||sleep、sig_handler
+268||sleep、sig_handler
+269||sleep
+270||isatty，tcdrain
+271||isatty,tcflow
+272||isatty,tcflush
+273||tcgetattr，tcsetattr
+274||tcgetattr
+274||tcgetattr
+275||tcflush、tcgetattr、tcsetattr
+275||tcflush、tcgetattr、tcsetattr
+276||sigaction、tcgetattr、tcsetattr、fcntl
+277||tcgetattr、tcflush、cfsetispeed、cfsetospeed
+275||tcflush、tcgetattr、tcsetattr
+278||tcgetattr，tcsetattr、fpathconf、isatty
+279||tcdrain、tcgetattr、tcsetattr
+280||tcgetpgrp,tcsetpgrp
+281||readdir,telldir,opendir
+282||time,localtime,asctime,strftime
+183||time
+283||times
+283||times
+284||trunc，printf
+285||waitpid,fork,wait,exit
+286||unlink,mkstemp
+287||stat，utime，unlink
+288||time,utime
+289||ulimit，exit
+290||write
+291||write，open
+292||stat，printf
+293||usleep,time,ctime
+294||timer，signal
+295||strcpy，fwrite
+296||fstat,open
+297||fopen,sprintf,fputs
+298||tmpfile
+299||tmpnam
+300||truncate, ftruncate
+301||ttyname
+302||tmpfile, tmpnam
+303||getopt
+303||getopt
+303||getopt
+303||getopt
+303||getopt
+303||getopt
+304||getpgid
+305||getpgrp，fork,signal,kill,read
+306||getpgrp
+307||getpeername，inet_ntoa,ntohs
+308||getpeername,getsockname,accept,listen,bind,
+307||getpeername，inet_ntoa,ntohs
+309||getpid，getpgrp，fork
+182||waitpid
+182||waitpid
+310||waitpid,fork,execlp
+311||waitpid,fork
+312||waitpid,fork,execl
+313||waitpid,execl,fork
+314||waitpid,read_lock,read
+315||pid_t getpid(void)
+315||pid_t getpid(void)
+315||pid_t getpid(void)
+315||pid_t getpid(void)
+316||pid_t getppid(void)
+316||pid_t getppid(void)
+316||pid_t getppid(void)
+317||int getpriority(int which,id_t who)
+317||int getpriority(int which,id_t who)
+317||int getpriority(int which,id_t who)
+317||int getpriority(int which,id_t who)
+318||*getprotobyname
+318||*getprotobyname
+318||*getprotobyname
+318||*getprotobyname
+319||getprotobynumber
+319||getprotobynumber
+319||getprotobynumber
+319||getprotobynumber
+319||getprotobynumber
+319||getprotobynumber
+319||getprotobynumber
+320||getprotoent
+320||getprotoent
+321||getpwnam
+321||getpwnam
+321||getpwnam
+322||getpwent
+322||getpwent
+322||getpwent
+323||bind，sizeof，memset，htons，htonl
+323||bind，sizeof，memset，htons，htonl
+323||bind，sizeof，memset，htons，htonl
+323||bind，sizeof，memset，htons，htonl
+323||bind，sizeof，memset，htons，htonl
+324||calloc，malloc，realloc，free
+325||calloc
+325||calloc
+325||calloc
+325||calloc
+326||cfgetispeed
+326||cfgetispeed
+326||cfgetispeed
+326||cfgetispeed
+326||cfgetispeed
+327||cfgetospeed
+327||cfgetospeed
+327||cfgetospeed
+327||cfgetospeed
+327||cfgetospeed
+328||getcwd, chdir, path_alloc
+329||getcwd, malloc
+330||getcwd
+330||getcwd
+331||getcwd, xmalloc
+332||getegid, geteuid, execv
+333||getegid, setregid
+333||getegid, setregid
+334||getegid, setregid, read
+335||getegid, getgid,geteuid, getuid, kill
+336||geteuid
+336||geteuid
+337||geteuid, setreuid
+338||geteuid, fork, close, dup2, _exit, setuid, wait
+336||geteuid
+339||getenv, malloc
+340||getenv, malloc, free
+341||getenv, exit
+342||getenv, system
+342||getenv, system
+343||getgid
+344||getuid, getgid, getpwuid, getpwnam,
+343||getgid
+345||getpid, getppid, getuid, geteuid, getgid, getegid, getpwuid
+346||setgrent，getgrent, endgrent
+347||getgrent, endgrent
+347||getgrent, endgrent
+347||getgrent, endgrent
+347||getgrent, endgrent
+348||getgrgid
+348||getgrgid
+349||getpwuid, getgrgid
+348||getgrgid
+348||getgrgid
+348||getgrgid
+348||getgrgid
+350||getgrnam
+351||chmod, getgrnam
+352||setgid, initgroups, setuid, getgroups, getuid, geteuid, getgid, getegid, getpwnam, getgrnam,
+350||getgrnam
+353||sysconf,malloc,getgroups,sizeof
+354||getgroups,dim
+355||gethostname,printf
+356||memset,getaddrinfo,fprintf,gai_strerror
+357||getlogin,getpwnam
+358||getgroups
+359||getgroups,printf,getgrgid
+355||gethostname,printf
+355||gethostname,printf
+355||gethostname,printf
+360||getlogin_r,sizeof,printf,getlogin
+353||sysconf,malloc,getgroups,sizeof
+361||printf,
+362||getgrgid,printf
+363||gethostent,printf
+363||gethostent,printf
+364||printf.getlogin
+365||getgroups,printf
+366||getnameinfo, inet_pton, gai_strerror
+367||getaddrinfo, getnameinfo
+368||inet_pton, getnameinfo
+369||getaddrinfo, getnameinfo, inet_ntop,
+367||getaddrinfo, getnameinfo
+370||socket, fcntl, bind , listen , epoll_wait, accept , getnameinfo , make_socket_non_blocking, read, write , abort, free , epoll_create
+371||getnetbyaddr
+371||getnetbyaddr
+371||getnetbyaddr
+371||getnetbyaddr
+371||getnetbyaddr
+372||getnetbyname
+372||getnetbyname
+372||getnetbyname
+373||getnetent
+373||getnetent
+373||getnetent
+373||getnetent
+373||getnetent
+374||pthread_create，thr_fn
+375||pthread_detach()
+376||pthread_equal
+377||pthread_join，pthread_create
+378||pthread_create
+375||pthread_detach()
+379||pthread_equal()
+380||pthread_exit()
+381||pthread_creat
+382||phread_detach
+383||phread_equal()
+384||phread_exit()
+385||phread_create()
+375||pthread_detach()
+379||pthread_equal()
+386||pthrea_exit()
+387||pthread_create()
+388||phread_detach()
+379||pthread_equal()
+380||pthread_exit()
+389||pthread_condattr_setclock
+389||pthread_condattr_setclock
+389||pthread_condattr_setclock
+389||pthread_condattr_setclock
+389||pthread_condattr_setclock
+390||pthread_condattr_setpshared
+390||pthread_condattr_setpshared
+390||pthread_condattr_setpshared
+390||pthread_condattr_setpshared
+390||pthread_condattr_setpshared
+391||pthread_cond_broadcast
+391||pthread_cond_broadcast
+391||pthread_cond_broadcast
+391||pthread_cond_broadcast
+391||pthread_cond_broadcast
+392||pthread_cond_destroy
+392||pthread_cond_destroy
+392||pthread_cond_destroy
+392||pthread_cond_destroy
+392||pthread_cond_destroy
+393||pthread_cond_init
+394||pthread_cond_init，pthread_cond_signal，pthread_cond_wait，pthread_cond_timedwait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+396||pthread_cond_signal
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+394||pthread_cond_init，pthread_cond_signal，pthread_cond_wait，pthread_cond_timedwait
+397||pthread_cond_timedwait
+394||pthread_cond_init，pthread_cond_signal，pthread_cond_wait，pthread_cond_timedwait
+398||pthread_cond_init，pthread_cond_timedwait
+399||pthread_cond_signal，pthread_cond_timedwait
+394||pthread_cond_init，pthread_cond_signal，pthread_cond_wait，pthread_cond_timedwait
+400||pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+401||pthread_cond_init，pthread_cond_wait
+395||pthread_cond_init，pthread_cond_signal，pthread_cond_wait
+402||pthread_key_delete
+402||pthread_key_delete
+402||pthread_key_delete
+402||pthread_key_delete
+402||pthread_key_delete
+403||pthread_kill
+403||pthread_kill
+403||pthread_kill
+403||pthread_kill
+403||pthread_kill
+404||pthread_mutexattr_destroy
+404||pthread_mutexattr_destroy
+405||pthread_mutexattr_getpshared
+406||pthread_barrier_wait
+407||pthread_cancel
+408||pthread_detach
+408||pthread_detach
+408||pthread_detach
+409||socketpair
+409||socketpair
+410||setsockopt
+410||setsockopt
+410||setsockopt
+410||setsockopt
+410||setsockopt
+411||gets，getspnam，printf，setspent，endspent
+412||setspent
+413||getspent，printf，endpwent，setspent
+414||getpwent,setpwent,endpwent
+413||getspent，printf，endpwent，setspent
+415||setuid
+415||setuid
+415||setuid
+415||setuid
+415||setuid
+416||fopen，setvbuf，malloc，fclose,free
+417||fopen,setvbuf
+418||memset，fprintf，sleep，setvbuf
+419||fopen，fclose，setvbuf
+420||fopen，fclose，perror,setvbuf,fgetc
+421||*shmat
+422||ftok，shmget，shmat
+423||shmat,SmlWhsAdd
+424||fprintf(),shmat(),write();
+425||shmget,shmat,shmdt,shmid,wait
+426||shmcl,warehouse.elem
+427||shmget,shmat,fork
+428||semget,semct,semctl,shmid
+429||shmget,shmatshmctl, printf
+430||shmctl
+431||shmdt,
+432||shmget,shmat,shmdt,shmid,exit
+432||shmget,shmat,shmdt,shmid,exit
+432||shmget,shmat,shmdt,shmid,exit
+432||shmget,shmat,shmdt,shmid,exit
+432||shmget,shmat,shmdt,shmid,exit
+422||ftok，shmget，shmat
+433||shmget
+434||shmget,assert
+435||shmget,shmat,sprintf,strcat
+436||shutdown
+436||shutdown
+436||shutdown
+436||shutdown
+436||shutdown
+437||sig2str
+437||sig2str
+437||sig2str
+437||sig2str
+437||sig2str
+438||sigaction
+438||sigaction
+438||sigaction
+438||sigaction
+438||sigaction
+439||sigaddset
+439||sigaddset
+439||sigaddset
+439||sigaddset
+439||sigaddset
+440||sigdelset
+440||sigdelset
+441||sigemptyset
+441||sigemptyset
+441||sigemptyset
+442||sigfillset
+443||sigismember
+443||sigismember
+443||sigismember
+443||sigismember
+444||siglongjmp
+444||siglongjmp
+444||siglongjmp
+444||siglongjmp
+444||siglongjmp
+445||signal
+445||signal
+445||signal
+445||signal
+445||signal
+446||sigpending
+446||sigpending
+446||sigpending
+446||sigpending
+446||sigpending
+447||sigprocmask
+447||sigprocmask
+447||sigprocmask
+447||sigprocmask
+447||sigprocmask
+448||sigqueue
+448||sigqueue
+448||sigqueue
+448||sigqueue
+448||sigqueue
+449||Sigsetjmp
+449||Sigsetjmp
+449||Sigsetjmp
+449||Sigsetjmp
+449||Sigsetjmp
+450||sigsuspend
+450||sigsuspend
+450||sigsuspend
+450||sigsuspend
+450||sigsuspend
+451||sigwait
+451||sigwait
+451||sigwait
+451||sigwait
+451||sigwait
+452||unsigned int sleep (unsigned int seconds)
+452||unsigned int sleep (unsigned int seconds)
+452||unsigned int sleep (unsigned int seconds)
+452||unsigned int sleep (unsigned int seconds)
+452||unsigned int sleep (unsigned int seconds)
+453||int sprintf(char *restrict buf, size_t n,const char *restrict format, ...)
+453||int sprintf(char *restrict buf, size_t n,const char *restrict format, ...)
+453||int sprintf(char *restrict buf, size_t n,const char *restrict format, ...)
+453||int sprintf(char *restrict buf, size_t n,const char *restrict format, ...)
+453||int sprintf(char *restrict buf, size_t n,const char *restrict format, ...)
+454||int sockatmark(int sockfd)
+454||int sockatmark(int sockfd)
+454||int sockatmark(int sockfd)
+454||int sockatmark(int sockfd)
+454||int sockatmark(int sockfd)
+455||int socket(int domain, int type, int protocol);
+455||int socket(int domain, int type, int protocol);
+455||int socket(int domain, int type, int protocol);
+455||int socket(int domain, int type, int protocol);
+455||int socket(int domain, int type, int protocol);
+456||pthread_rwlockattr_setpshared
+456||pthread_rwlockattr_setpshared
+456||pthread_rwlockattr_setpshared
+457||pthread_rwlock_destroy
+457||pthread_rwlock_destroy
+457||pthread_rwlock_destroy
+457||pthread_rwlock_destroy
+458||pthread_rwlock_init
+458||pthread_rwlock_init
+458||pthread_rwlock_init
+458||pthread_rwlock_init
+459||pthread_rwlock_rdlock
+459||pthread_rwlock_rdlock
+459||pthread_rwlock_rdlock
+459||pthread_rwlock_rdlock
+460||pthread_rwlock_timerdlock
+461||pthread_rwlock_timewrlock
+460||pthread_rwlock_timerdlock
+461||pthread_rwlock_timewrlock
+461||pthread_rwlock_timewrlock
+461||pthread_rwlock_timewrlock
+462||pthread_rwlock_tryrdlock
+463||pthread_rwlock_trywrlock
+462||pthread_rwlock_tryrdlock
+463||pthread_rwlock_trywrlock
+462||pthread_rwlock_tryrdlock
+463||pthread_rwlock_trywrlock
+462||pthread_rwlock_tryrdlock
+463||pthread_rwlock_trywrlock
+464||pthread_rwlock_unlock
+464||pthread_rwlock_unlock
+464||pthread_rwlock_unlock
+464||pthread_rwlock_unlock
+464||pthread_rwlock_unlock
+464||pthread_rwlock_unlock
+465||thread_rwlock_wrlock
+466||pthread_rwlock_wrlock
+466||pthread_rwlock_wrlock
+466||pthread_rwlock_wrlock
+467||pthread_self()
+467||pthread_self()
+467||pthread_self()
+468||pthread_self
+469||pthread_setcancelstate
+469||pthread_setcancelstate
+470||pthread_spin_init
+470||pthread_spin_init
+470||pthread_spin_init
+471||pthread_spin_lock
+471||pthread_spin_lock
+471||pthread_spin_lock
+471||pthread_spin_lock
+471||pthread_spin_lock
+472||pthread_spin_trylock
+472||pthread_spin_trylock
+472||pthread_spin_trylock
+472||pthread_spin_trylock
+472||pthread_spin_trylock
+473||pthread_spin_unlock
+473||pthread_spin_unlock
+473||pthread_spin_unlock
+473||pthread_spin_unlock
+473||pthread_spin_unlock
+474||pthread_setcanceltype
+474||pthread_setcanceltype
+474||pthread_setcanceltype
+475||pthread_setspecific
+475||pthread_setspecific
+475||pthread_setspecific
+475||pthread_setspecific
+475||pthread_setspecific
+476||pthread_sigmask
+476||pthread_sigmask
+476||pthread_sigmask
+476||pthread_sigmask
+476||pthread_sigmask
+477||pthread_spin_destroy
+477||pthread_spin_destroy
+478||tcgetpgrp
+478||tcgetpgrp
+478||tcgetpgrp
+478||tcgetpgrp
+478||tcgetpgrp
+479||tcgetsid
+479||tcgetsid
+479||tcgetsid
+479||tcgetsid
+479||tcgetsid
+480||tcsendbreak
+480||tcsendbreak
+480||tcsendbreak
+480||tcsendbreak
+481||tcsetattr
+481||tcsetattr
+481||tcsetattr
+481||tcsetattr
+481||tcsetattr
+482||fopen，fwriter，fclose
+483||fopen，fclose
+484||fork，getpid
+485||fpathconf，fopen
+486||fopen，fprintf，fclose
+487||scanf，printf，putchar，fclose
+488||fopen，fputc，fclose
+489||fopen,fclose
+484||fork，getpid
+490||fprintf，fopen，fclose
+491||fprintf
+491||fprintf
+491||fprintf
+484||fork，getpid
+491||fprintf
+492||fwide
+493||fwrite
+494||gai_strerror
+495||getaddrinfo
+496||open(), write(),ftruncate(), close()，lseek()
+497||open(),syslog(),strerror(),ftruncate(),write()
+498||flockfile(),fseek(),fread() ,atoi(),fwrite(), funlockfile()，fclose(),fopen(), pthread_create(), pthread_join()
+499||open(),close(),stat(), futimens(),err_ret()
+500||err_quit(),open(),err_sys(),fstat(),ftruncate(),mmap(),memcpy()
+501||mktemp(),open(),strerror(), malloc(),memset(),write(), ftruncate()
+502||open(),fstat(),perror(), close(),creat(),mmap(), munmap(),ftruncate(), memcpy()
+503||err_quit(),shm_unlink(), Shm_open（），Ftruncate（），Close（），Sem_close（）
+504||malloc(),flockfile(),fgets(),strlen(),funlockfile(), pthread_create(),pthread_join(),free()
+505||flockfile(),putchar_unlocked(), funlockfile(),pthread_create() ,pthread_exit()
+506||stat(),open(),futimens(),close()
+507||err_quit(),stat(),open(), err_ret(),futimens()
+508||stat()，open(),futimens(),close()
+509||stat()，err_ret(),open(), futimens(),err_ret(),close()
+506||stat(),open(),futimens(),close()
+510||fseeko
+510||fseeko
+510||fseeko
+510||fseeko
+510||fseeko
+510||fseeko
+511||fsetpos
+511||fsetpos
+511||fsetpos
+511||fsetpos
+511||fsetpos
+511||fsetpos
+512||fstat
+512||fstat
+512||fstat
+512||fstat
+512||fstat
+512||fstat
+513||fstatat
+514||fsync
+515||ftell
+516||ftello
+517||ftok
+518||fputc
+519||fputs
+520||fread
+521||free
+522||freeaddrinfo,getaddrinfo
+523||FILE  *freopen,fprintf,printf,fclose
+524||FILE  *freopen,fclose,scanf
+525||FILE  *freopen
+526||fscanf
+526||fscanf
+527||fseek
+527||fseek
+527||fseek
+522||freeaddrinfo,getaddrinfo
+523||FILE  *freopen,fprintf,printf,fclose
+524||FILE  *freopen,fclose,scanf
+525||FILE  *freopen
+526||fscanf
+526||fscanf
+527||fseek
+527||fseek
+527||fseek
+528||pselect
+529||psiginfo
+530||psignal
+531||pthread_atfork
+532||pthread_attr_destroy
+533||pthread_attr_getguardsize
+534||pthread_attr_getdetachstate
+535||pthread_attr_getstack
+536||waitpid,wait
+537||unlink,unlinkat
+201||vfscanf
+538||time，times
+539||pthread_attr_getstacksize
+540||pthread_attr_init
+541||pthread_attr_setdetachstate
+542||pthread_attr_setguardsize
+543||pthread_attr_setstack
+544||pthread_attr_setstacksize
+478||tcgetpgrp
+298||tmpfile
+545||pthread_barrierattr_init
+546||pthread_barrierattr_setpshared
+547||pthread_barrier_destroy
+548||void pthread_cleanup_pop(int execute) void pthread_cleanup_push(void (*rtn)(void *), void *arg)
+549||pthread_cancel，pthread_create
+550||pthread_barrier_init() pthread_barrier_wait() pthread_barrier_destroy()
+551||mode_t umask(mode_t cmask);
+552||FILE  *tmpfile(void);
+553||*fdopen(),fclose()
+553||*fdopen(),fclose()
+553||*fdopen(),fclose()
+553||*fdopen(),fclose()
+554||FD_CLR(),SOCKET(),FD_SET()
+554||FD_CLR(),SOCKET(),FD_SET()
+554||FD_CLR(),SOCKET(),FD_SET()
+555||FD_ISSET(),FD_SET(),FD_ZERO()
+555||FD_ISSET(),FD_SET(),FD_ZERO()
+555||FD_ISSET(),FD_SET(),FD_ZERO()
+555||FD_ISSET(),FD_SET(),FD_ZERO()
+555||FD_ISSET(),FD_SET(),FD_ZERO()
+556||*fdopendir(),readdir()
+557||write()
+557||write()
+558||wait()
+558||wait()
+559||waitpid(),fork(),sleep()
+560||utime(),open(),close()
+561||FD_SET() FD_ZERO()
+562||FD_SET() FD_ZERO() FD_CLR()  FD_ISSET()
+563||FD_SET() FD_ZERO()   FD_ISSET() select()
+563||FD_SET() FD_ZERO()   FD_ISSET() select()
+564||FD_SET()    FD_ISSET()
+565||FD_ZERO()
+566||FD_ZERO()    FD_SET()
+567||FD_ZERO()    FD_SET()FD_ISSET() select()
+568||FD_ZERO() FD_SET()FD_ISSET() select()
+569||FD_ZERO()    FD_SET()   FD_ISSET()
+570||feof()    fopen()
+570||feof()    fopen()
+570||feof()    fopen()
+571||feof()    fget()  fopen()
+572||ferror()    fopen() fread() fseek()
+573||ferror()   feof()  fopen()
+574||ferror()
+574||ferror()
+575||system()
+575||system()
+576||fexecve(),open()
+577||fexecve(),system(),popen()
+576||fexecve(),open()
+578||fexecve(),open(),fork()
+579||fexecve(),perror(),puts()
+580||fflush(),fputs(),fgets()
+581||fflush(),puts()
+582||fflush()
+583||fflush(),gets_s()
+584||fflush(),fopen(),fwrite()
+585||fgetc(),fopen(),fclose()
+585||fgetc(),fopen(),fclose()
+586||fgetc(),feof()
+587||fgetc(),ferror(),putchar()
+588||fgetc(),putc()
+589||fgetops(),fsetpos(),fputs()
+590||fgetops(),fsetpos(),f()
+591||fgetops(),fsetpos(),fgetc()
+592||fgetops(),fseek(),fwrite()
+589||fgetops(),fsetpos(),fputs()
+593||fgets
+593||fgets
+594||fgets,fputs
+595||fgets,strlen
+596||fgets,sizeof()
+597||fgets,getchar
+593||fgets
+593||fgets
+598||fileno
+598||fileno
+599||fileno,dup
+600||fileno,dup2
+601||fileno,fopen,read,write
+602||fileno,lockf
+603||flockfile
+603||flockfile
+604||fmemopen
+605||fmemopen,open_memstream
+604||fmemopen
+606||fmemopen,fflush,memset
+607||int socketpair(int domain, int type, int protocol, int sockfd[2]);
+608||int sprintf(char *restrict buf, const char *restrict format, ...);
+609||int sscanf(const char *restrict buf,
+610||int stat(const char *restrict path, struct stat *restrict buf);
+611||int stat(const char *restrict path, struct stat *restrict buf)
+612||int str2sig(const char *str, int *signop)
+613||char *strerror(int errnum)
+614||size_t strftime(char *str, size_t maxsize, const char *format, const struct tm *timeptr)
+615||size_t strftime_l(char *restrict buf,  size_t maxsize,  const char *restrict format, const struct tm *restrict tmptr, locale_t locale);
+616||char  *strptime(const char *restrict buf, const char *restrict format, struct tm *restrict tmptr);
+617||char *strsignal(int signo);
+618||int symlink(const char *actualpath, const char *sympath);
+619||int symlinkat(const char *actualpath, int fd, const char *sympath);
+620||pthread_once
+620||pthread_once
+620||pthread_once
+620||pthread_once
+621||pthread_rwlockattr_destroy
+621||pthread_rwlockattr_destroy
+621||pthread_rwlockattr_destroy
+621||pthread_rwlockattr_destroy
+621||pthread_rwlockattr_destroy
+622||pthread_rwlockattr_getpshared
+622||pthread_rwlockattr_getpshared
+622||pthread_rwlockattr_getpshared
+622||pthread_rwlockattr_getpshared
+623||pthread_rwlockattr_init
+623||pthread_rwlockattr_init
+623||pthread_rwlockattr_init
+623||pthread_rwlockattr_init
+623||pthread_rwlockattr_init
+624||pthread_ mutex_lock
+625||pthread_mutex_unlock
+626||pthread_mutex_trylock
+627||pthread_mutex_destroy
+628||pthread_ mutex_lock,pthread_mutex_unlock
+628||pthread_ mutex_lock,pthread_mutex_unlock
+629||kill
+630||sigemptyset,sigaction,sigaddset,sigprocmask,sigsuspend
+631||igprocmask,sigprocmask
+632||sigemptyset,sigaddset,sigprocmask,sigpending,exit,sigismember,sleep
+445||signal
+441||sigemptyset
+633||sigemptyset,sigaddset,sigdelset
+634||sigemptyset,sigaddset
+438||sigaction
+635||raise
+636||pipe,close,read,exit,write
+637||sched_get_priority_min,sched_get_priority_max
+637||sched_get_priority_min,sched_get_priority_max
+638||sched_getparam

@@ -51,7 +51,7 @@ LSTM（Long Short-Term Memory）是长短期记忆网络，是一种时间递归
 - D(x)是一个神经网络，以数据样本x为输入，输出标量值。目的是判断x是真实数据还是G中的生成数据
 - D目的是分辨出输入数据是真实样本还是生成样本。
 - G的目的是混淆D，让D无法正确分辨。即生成的样本分布尽量和真实样本分布相似。
-- ![](docs/pictures/GAN_11.png)
+- ![](pictures/GAN_11.png)
 
 ---
 
@@ -66,7 +66,7 @@ LSTM（Long Short-Term Memory）是长短期记忆网络，是一种时间递归
 
 整体设计如图：
 
-![](docs/pictures/GAN_13.png)
+![](pictures/GAN_13.png)
 
 <br/>
 
@@ -96,19 +96,19 @@ LSTM（Long Short-Term Memory）是长短期记忆网络，是一种时间递归
 
 ####生成网络：
 
-- ![](docs/pictures/generator_model.png)
+- ![](pictures/generator_model.png)
 
 ---
 
 ####判别网络：
 
-- ![](docs/pictures/discriminator_model.png)
+- ![](pictures/discriminator_model.png)
 
 ---
 
 ####GAN网络（Combined）:
 
-- ![](docs/pictures/combined_model.png)
+- ![](pictures/combined_model.png)
 
 ---
 
